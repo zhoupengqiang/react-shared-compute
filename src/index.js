@@ -2,7 +2,9 @@ const sharedComputes = {}
 
 export const createSharedCompute = (name, fn, isEqual) => {
   if(typeof sharedComputes[name] !== "undefined"){
-    throw new Error(`compute "${name}" has been defined, please use another name!`)
+    if(module?.hot?.status() !== 'apply'){
+      throw new Error(`compute "${name}" has been defined, please use another name!`)
+    }
   }
   let firstCompute = true
 

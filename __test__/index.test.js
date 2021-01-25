@@ -44,4 +44,10 @@ describe('test createSharedCompute!', ()=>{
 
     expect(mockCompute.mock.calls.length).toBe(1)
   })
+
+  // test('compute will be overwrite on hmr applying', ()=>{
+  //   const pre = createSharedCompute('e', ()=>'eee')
+  //   const next = createSharedCompute('e', ()=>'fff')
+  //   expect(next()).toBe('fff')
+  // })
 })
