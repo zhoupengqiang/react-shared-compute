@@ -1,5 +1,6 @@
 {
   "plugins": ["jest"],
+  "extends": ["eslint:recommended", "eslint-config-prettier"],
   "rules": {
     "jest/no-disabled-tests": "warn",
     "jest/no-focused-tests": "error",
@@ -8,6 +9,6 @@
     "jest/valid-expect": "error"
   },
   "env": {
-    "jest/globals": true
+    "jest/globals": true,
   }
 }
