@@ -1,6 +1,6 @@
 {
   "name": "react-shared-compute",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "create shared compute logic for multi components",
   "main": "lib/index.js",
   "scripts": {
