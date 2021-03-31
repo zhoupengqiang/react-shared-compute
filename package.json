@@ -1,13 +1,13 @@
 {
   "name": "react-shared-compute",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "create shared compute logic for multi components",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "tsc",
     "build-demo": "webpack --mode development  --config demo/webpack.config.js",
     "start": "webpack serve --hot --mode development --config demo/webpack.config.js",
-    "test": "node -r esm node_modules/.bin/jest"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,10 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.13.0",
     "@hot-loader/react-dom": "^17.0.1+4.13.0",
     "@rematch/core": "^1.4.0",
+    "@types/jest": "^26.0.22",
     "babel-loader": "^8.2.2",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^8.1.0",
